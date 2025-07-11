@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      <div className="py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-20">
+      <div className="  px-6  lg:px-20 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Brand Description */}
         <div>
-          <h2 className="text-lg font-semibold hover:text-yellow-300">
+          <h2 className="text-xl font-semibold hover:text-yellow-300">
             Quick Cab
           </h2>
-          <p className="mt-2 text-sm text-gray-300 hover:text-yellow-300 w-[250px]">
+          <p className="mt-2 text-sm text-gray-300 hover:text-yellow-300 max-w-xs">
             Book reliable outstation and local cabs at the best prices. 24/7
             support and on-time pickups.
           </p>
@@ -17,23 +17,28 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-base font-semibold mb-2 hover:text-yellow-300">
+          <h3 className="text-lg font-semibold mb-3 hover:text-yellow-300">
             Quick Links
           </h3>
-          <ul className="space-y-1 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-gray-300">
             <li>
               <Link href="/" className="hover:text-yellow-300">
-                Home
+                Book a Package
               </Link>
             </li>
             <li>
-              <Link href="/book" className="hover:text-yellow-300">
+              <Link href="/cab" className="hover:text-yellow-300">
                 Book a Cab
               </Link>
             </li>
             <li>
               <Link href="/offers" className="hover:text-yellow-300">
-                Offers
+                Check Deals
+              </Link>
+            </li>
+            <li>
+              <Link href="/annoucement" className="hover:text-yellow-300">
+                Announcement
               </Link>
             </li>
             <li>
@@ -46,31 +51,23 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="text-base font-semibold mb-2 hover:text-yellow-300">
+          <h3 className="text-lg font-semibold mb-3 hover:text-yellow-300">
             Services
           </h3>
-          <ul className="space-y-1 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-gray-300">
             <li>
-              <Link href="/services/one-way" className="hover:text-yellow-300">
-                One-way Cabs
+              <Link href="/cab" className="hover:text-yellow-300">
+                Cab-Book
               </Link>
             </li>
             <li>
-              <Link
-                href="/services/round-trip"
-                className="hover:text-yellow-300"
-              >
-                Round Trip Cabs
+              <Link href="/cab" className="hover:text-yellow-300">
+                Package Book
               </Link>
             </li>
             <li>
-              <Link href="/services/airport" className="hover:text-yellow-300">
-                Airport Cabs
-              </Link>
-            </li>
-            <li>
-              <Link href="/services/hourly" className="hover:text-yellow-300">
-                Hourly Cabs
+              <Link href="/cab" className="hover:text-yellow-300">
+                Attractions
               </Link>
             </li>
           </ul>
@@ -78,10 +75,10 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-base font-semibold mb-2 hover:text-yellow-300">
+          <h3 className="text-lg font-semibold mb-3 hover:text-yellow-300">
             Contact Us
           </h3>
-          <ul className="space-y-1 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-gray-300">
             <li className="hover:text-yellow-300">📞 +91 8260663021</li>
             <li className="hover:text-yellow-300">📧 support@quickcab.in</li>
             <li className="hover:text-yellow-300">📍 Bhubaneswar, Odisha</li>
@@ -90,16 +87,16 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400 pb-4">
+      <div className="border-t border-gray-700 mt-6 pt-4 pb-6 text-center text-xs sm:text-sm text-gray-400 px-4">
         © 2025 Quick Cab. All Rights Reserved &nbsp;|&nbsp;
         <Link href="#" className="hover:underline">
           Privacy Policy
-        </Link>{" "}
+        </Link>
         &nbsp;|&nbsp;
         <Link href="#" className="hover:underline">
           Terms of Service
-        </Link>{" "}
-        &nbsp;|&nbsp; Powered by -&nbsp;
+        </Link>
+        &nbsp;|&nbsp; Powered by&nbsp;
         <Link
           href="https://clinquant-mooncake-372fbb.netlify.app/"
           className="font-semibold text-white hover:underline"

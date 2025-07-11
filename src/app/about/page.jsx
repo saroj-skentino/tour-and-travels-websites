@@ -1,11 +1,13 @@
-import AboutSection from "@/components/AboutUs/aboutUs";
-import AboutUs from "@/components/HomePage/Section/AboutUs";
+import AboutSection from "@/components/pages/AboutUs/aboutUs";
+import CabList from "@/components/pages/CabPage/CabList";
+
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <AboutSection />
+      {/* <AboutSection /> */}
+      <CabList />
     </div>
   );
 };
